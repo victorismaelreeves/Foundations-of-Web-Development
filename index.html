@@ -3,16 +3,24 @@
   <head>
     <title>Your Page Title</title>
 
+    <!-- CSS linked in the header so it loads first -->
     <link rel="stylesheet" type="text/css" href="assets/styles/styles.css" />
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav id="siteNav">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#siteFooter">Link 3</a></li>
+        </ul>
+      </nav>
     </header>
     <article></article>
     <aside></aside>
-    <footer></footer>
+    <footer id="siteFooter"></footer>
 
+    <!-- Javascript attached here so it loads after the content of the page -->
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>
