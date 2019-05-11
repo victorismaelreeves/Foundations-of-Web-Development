@@ -5,79 +5,32 @@
 
     <style>
       body {
-        margin-bottom: 120px;
+        padding: 200px;
       }
-      .container {
-        position: relative;
-      }
-      nav {
-        box-sizing: border-box;
-        border: 3px solid red;
-        left: 0px;
-        position: absolute;
+
+      .box {
+        border: 3px solid blue;
+        padding: 50px;
+        float: left;
         width: 200px;
+        height: 100px;
+        margin: 1em;
       }
+
       section {
-        box-sizing: border-box;
-        border: 3px solid orange;
-        /* position is static by default */
-        margin-left: 200px;
-        margin-bottom: 10px;
-      }
-      footer {
-        background-color: white;
-        box-sizing: border-box;
-        bottom: 0;
-        border: 3px solid green;
-        left: 0;
-        height: 70px;
-        position: fixed;
-        text-align: center;
-        width: 100%;
+        border: 3px solid red;
+        padding: 50px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Bar Food</a></li>
-          <li><a href="">Beer List</a></li>
-          <li><a href="">Hours</a></li>
-          <li><a href="">Location</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <section>
-        <h1>My First Heading</h1>
-        <p>
-          Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
-          ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
-          ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
-          euismod.
-        </p>
-      </section>
-      <section>
-        <h2>Second Section</h2>
-        <p>
-          Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus
-          magna, vel scelerisque nisl consectetur et. Nullam quis risus eget
-          urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
-          dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
-          nulla sed consectetur. Vestibulum id ligula porta felis euismod
-          semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-        </p>
-      </section>
-      <section>
-        <p>
-          Notice what happens when you resize your browser. It works nicely!
-        </p>
-      </section>
-      <footer>
-        If you use a fixed header or footer, make sure there is room for it! I
-        put a margin-bottom on the body.
-      </footer>
-    </div>
+    <div class="box">I feel lighter than air!</div>
+    <section>
+      In this case, the section element is actually after the div. However,
+      since the div is floated to the left, this is what happens: the text in
+      the section is floated around the div and the section surrounds the whole
+      thing. What if we wanted the section to actually appear after the floated
+      element?
+    </section>
   </body>
 </html>
