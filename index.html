@@ -8,39 +8,50 @@
         padding: 50px;
       }
 
-      article {
-        border: 3px solid red;
+      section {
         overflow: auto;
-        clear: both;
+        margin-bottom: 50px;
+        border: 3px solid red;
       }
 
-      article p {
-        box-sizing: border-box;
+      .block {
+        background-color: lightblue;
+        border: 2px solid blue;
+        height: 100px;
+        margin: 1em;
+        width: 200px;
+      }
+
+      .floats .block {
         float: left;
-        margin: 0;
-        padding: 20px;
-        width: 50%;
       }
 
-      article img {
-        float: right;
-        margin: 0;
-        width: 50%;
+      .ib {
+        border-color: green;
+      }
+
+      .ib .block {
+        display: inline-block;
       }
     </style>
   </head>
   <body>
-    <article>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta
-        gravida at eget metus. Maecenas faucibus mollis interdum. Curabitur
-        blandit tempus porttitor.
-      </p>
-      <img
-        src="https://www.placecage.com/g/500/500"
-        alt="nic cage is a cool dude"
-      />
-    </article>
+    <section class="floats">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </section>
+
+    <section class="ib">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </section>
   </body>
 </html>
