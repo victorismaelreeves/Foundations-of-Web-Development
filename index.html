@@ -5,32 +5,42 @@
 
     <style>
       body {
-        padding: 200px;
-      }
-
-      .box {
-        border: 3px solid blue;
         padding: 50px;
-        float: left;
-        width: 200px;
-        height: 100px;
-        margin: 1em;
       }
 
-      section {
+      article {
         border: 3px solid red;
-        padding: 50px;
+        overflow: auto;
+        clear: both;
+      }
+
+      article p {
+        box-sizing: border-box;
+        float: left;
+        margin: 0;
+        padding: 20px;
+        width: 50%;
+      }
+
+      article img {
+        float: right;
+        margin: 0;
+        width: 50%;
       }
     </style>
   </head>
   <body>
-    <div class="box">I feel lighter than air!</div>
-    <section>
-      In this case, the section element is actually after the div. However,
-      since the div is floated to the left, this is what happens: the text in
-      the section is floated around the div and the section surrounds the whole
-      thing. What if we wanted the section to actually appear after the floated
-      element?
-    </section>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta
+        gravida at eget metus. Maecenas faucibus mollis interdum. Curabitur
+        blandit tempus porttitor.
+      </p>
+      <img
+        src="https://www.placecage.com/g/500/500"
+        alt="nic cage is cool dude"
+      />
+    </article>
   </body>
 </html>
