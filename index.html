@@ -23,6 +23,9 @@
         color: #fdecb8;
         font-size: 20px;
         padding: 20px;
+        text-align: center;
+
+        /* flex: 1; */
       }
 
       .prime {
@@ -38,15 +41,32 @@
 
         /* special sauce */
         display: flex;
-        justify-content: center;
+        /* justify-content: center;
+        justify-content: space-between; */
+
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+      }
+
+      .home {
+        /* fills whole space minus the fixed size of the other items */
+        flex: 1;
+      }
+
+      .search {
+        /* margin-left: auto; */
+      }
+
+      .logout {
+        /* margin-left: auto; */
       }
     </style>
   </head>
   <body>
     <nav class="container">
-      <div class="prime">Home</div>
-      <div class="secondary">Search</div>
-      <div class="prime">Logout</div>
+      <div class="home prime">Home</div>
+      <div class="search secondary">Search</div>
+      <div class="logout prime">Logout</div>
     </nav>
   </body>
 </html>
