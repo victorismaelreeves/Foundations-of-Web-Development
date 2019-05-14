@@ -7,9 +7,12 @@ function buildList(data) {
   // get number of items in response
   let count = sanitize.length;
 
+  console.log(sanitize[0]);
+
   // add count to the paragraph
   document.querySelector(".country_count").innerHTML = count;
 
+  // loop through response items and build list
   for (i = 0; i <= count; i++) {
     let list = document.querySelector(".country_list");
     let country = sanitize[i] ? sanitize[i].name : null;
@@ -31,7 +34,7 @@ window.onload = function() {
     // Process our return data
     if (xhr.status >= 200 && xhr.status < 300) {
       // What do when the request is successful
-      console.log("success!", xhr);
+      // console.log("success!", xhr);
 
       buildList(xhr.response);
     } else {
