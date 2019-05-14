@@ -1,72 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
+    <title>Javascript is really cool!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <style>
-      html {
-        box-sizing: border-box;
-      }
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
-
-      body {
-        font-family: sans-serif;
-        padding: 40px;
-      }
-
-      .container > div {
-        color: #fdecb8;
-        font-size: 20px;
-        padding: 20px;
-        text-align: center;
-
-        /* flex: 1; */
-      }
-
-      .prime {
-        background-color: #a2cbb6;
-      }
-
-      .secondary {
-        background-color: #ed7871;
-      }
-
-      .container {
-        border: 10px solid #fdecb8;
-
-        /* special sauce */
-        display: flex;
-        /* justify-content: center;
-        justify-content: space-between; */
-
-        /* flex-direction: column; */
-        /* flex-direction: column-reverse; */
-      }
-
-      .home {
-        /* fills whole space minus the fixed size of the other items */
-        flex: 1;
-      }
-
-      .search {
-        /* margin-left: auto; */
-      }
-
-      .logout {
-        /* margin-left: auto; */
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css" />
   </head>
   <body>
-    <nav class="container">
-      <div class="home prime">Home</div>
-      <div class="search secondary">Search</div>
-      <div class="logout prime">Logout</div>
-    </nav>
+    <h1>Learning some JS &#128540;</h1>
+
+    <p>
+      This is a paragraph used for testing some JS tricks.
+      <span class="name">Joshua</span> likes to eat
+      <span class="food">Spicy Tingly Beef noodles from Xian</span>.
+    </p>
+
+    <input class="name_field" type="text" />
+
+    <button class="presto">Abra Cadabra!</button>
+
+    <script type="text/javascript">
+      let myVariable = "Hello World!";
+
+      // alert(myVariable);
+
+      // let btn = document.querySelector(".presto");
+      // btn.onclick = function() {
+      //   let form = document.querySelector(".name_field");
+      //   let form_input = form.value;
+      //   alert(form_input);
+      // };
+
+      // Conditionals in a function
+      // let btn = document.querySelector(".presto");
+      // btn.onclick = function() {
+      //   let form = document.querySelector(".name_field");
+      //   let form_input = form.value;
+      //   condFunc(form_input);
+      // };
+
+      // function condFunc(input) {
+      //   if (input === "pizza") {
+      //     alert("Pineapple on pizza is delicious, sorry!");
+      //   } else if (input === "empanada") {
+      //     alert("Mi favorito!");
+      //   } else {
+      //     alert("That sounds pretty good too, I guess.");
+      //   }
+      // }
+
+      function myFunc(input) {
+        let message = input + " duh!";
+
+        alert(message);
+      }
+
+      function multiply(num1, num2) {
+        var result = num1 * num2;
+        return result;
+      }
+      // multiply(4, 7);
+    </script>
   </body>
 </html>
