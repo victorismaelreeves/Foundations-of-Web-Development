@@ -151,12 +151,17 @@ p {
 
 #overlay {
   background-color: rgba(0, 0, 0, .4);
+  display: none;
   height: 100%;
   left: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 20;
+}
+
+#overlay.show {
+  display: block;
 }
 
 #cartBox {
