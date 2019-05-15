@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Javascript is really cool!</title>
+    <title>Interactive Website 3.0</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" type="text/css" href="assets/styles/styles.css" />
   </head>
   <body>
-    <h1>Pulling Data 💽</h1>
+    <header>
+      <a href="#">Fourth Wave Coffee</a>
 
-    <p>
-      Below is a list of all countries in the world 🌍. There are
-      <span class="country_count">0</span> countries.
-    </p>
+      <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#">Roasts</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+      <button class="cart">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 40"
+          x="0px"
+          y="0px"
+        >
+          <g data-name="Layer 2">
+            <path
+              d="M29.4,7.37a2.62,2.62,0,0,0-1.74-.62H7.39L7,3.85A2.75,2.75,0,0,0,4.24,1.5H2.74a1,1,0,0,0,0,2h1.5A.74.74,0,0,1,5,4.14l.49,3.19,2,13a2.33,2.33,0,0,0,.48,1.14,2.47,2.47,0,0,0,2,1h14.7a2.46,2.46,0,0,0,2-1,2.34,2.34,0,0,0,.41-.8l2.31-7.93L30.15,10A2.5,2.5,0,0,0,29.4,7.37Z"
+            />
+            <circle cx="12.5" cy="27.25" r="3.25" />
+            <circle cx="22.43" cy="27.25" r="3.25" />
+          </g>
+        </svg>
+      </button>
+    </header>
 
-    <ul class="country_list"></ul>
+    <section id="intro" class="intro_section">
+      <div class="content_container">
+        <h1>Single origin coffee you'll love.</h1>
+        <p>
+          We source our beans directly from a select handfull of growers we've
+          directly partnered with in the finest coffee growing regions on the
+          planet.
+        </p>
+        <a href="javascript:void(0);">Try for free</a>
+      </div>
+    </section>
+    <section id="about" class="about_section">
+      <h2>About Fourth Wave Coffee</h2>
+      <p>
+        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+        risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia
+        bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Morbi
+        leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia
+        bibendum nulla sed consectetur.
+      </p>
+    </section>
+    <section id="roasts" class="roasts_section">
+      <h3>Our Roasts</h3>
+      <p>
+        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+        risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia
+        bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Morbi
+        leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia
+        bibendum nulla sed consectetur.
+      </p>
+    </section>
 
     <script type="text/javascript" src="assets/scripts/main.js"></script>
   </body>
