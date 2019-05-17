@@ -6,9 +6,11 @@
     <!-- CSS linked in the header so it loads first -->
     <link rel="stylesheet" type="text/css" href="assets/styles/global.css" />
     <link rel="stylesheet" type="text/css" href="assets/styles/nav.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/title.css" />
   </head>
   <body>
-    <header>
+    <header id="siteHeader">
+      <!-- Navigation for site -->
       <nav id="siteNav">
         <ul>
           <li><a class="scroll" href="#title">Home</a></li>
@@ -17,13 +19,17 @@
         </ul>
       </nav>
     </header>
+    <!-- Main column of content -->
     <main>
       <section id="title">
+        <div class="bg_img"></div>
         <h1>Title of Project</h1>
       </section>
       <section id="intro"></section>
       <section id="sectionOne"></section>
     </main>
+
+    <!-- Site footer -->
     <footer id="siteFooter"></footer>
 
     <!-- Javascript attached here so it loads after the content of the page -->

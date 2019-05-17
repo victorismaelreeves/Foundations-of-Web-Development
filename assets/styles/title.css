@@ -1,0 +1,30 @@
+#title {
+  height: 100vh;
+  position: relative;
+}
+
+#title .bg_img {
+  background-image: url(../images/vector_earth.png);
+  background-size: 30% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#title h1 {
+  color: black;
+  font-size: 60px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
