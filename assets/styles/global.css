@@ -17,3 +17,9 @@ h6 {
 main {
   position: relative;
 }
+
+.content_column {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
