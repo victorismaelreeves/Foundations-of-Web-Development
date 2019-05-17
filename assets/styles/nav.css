@@ -17,6 +17,10 @@
   padding: 0;
 }
 
+#siteNav ul.active {
+  display: block;
+}
+
 #siteNav ul li {
   list-style: none;
 }
