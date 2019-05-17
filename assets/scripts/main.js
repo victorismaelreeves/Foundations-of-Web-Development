@@ -1,6 +1,6 @@
-function showCart() {
+function showMessage() {
   let overlay = document.querySelector("#overlay");
-  console.log("cart button clicked");
+  console.log("message button clicked");
 
   overlay.classList.add("show");
 }
@@ -14,7 +14,7 @@ function hideOverlay() {
 window.onload = function() {
   console.log("page loaded!");
 
-  let cart_btn = document.querySelector("header .cart");
+  let message_btn = document.querySelector(".message_btn");
   let overlay = document.querySelector("#overlay");
 
   overlay.onclick = function(e) {
@@ -22,8 +22,8 @@ window.onload = function() {
     hideOverlay();
   };
 
-  cart_btn.onclick = function(e) {
+  message_btn.onclick = function(e) {
     e.preventDefault();
-    showCart();
+    showMessage();
   };
 };
