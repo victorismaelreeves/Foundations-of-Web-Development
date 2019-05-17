@@ -1,3 +1,7 @@
 body {
   background-color: #eaeaea;
 }
+
+#title {
+  height: 100vh;
+}
