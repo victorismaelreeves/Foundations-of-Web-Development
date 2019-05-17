@@ -12,14 +12,33 @@
 }
 
 #siteNav ul {
-  display: flex;
+  display: none;
   margin: 0;
   padding: 0;
 }
 
 #siteNav ul li {
-  flex: 1;
   list-style: none;
+}
+
+#siteNav .nav_switch {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 15px 15px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 801px) {
+  #siteNav .nav_switch {
+    display: none;
+  }
+  #siteNav ul {
+    display: block;
+  }
 }
 
 #siteNav ul li a {
