@@ -1,8 +1,22 @@
 body {
-  background-color: #eaeaea;
-  font-family: sans-serif;
+  background-color: #eff0f1;
+  background-image: url(../images/vector_earth.png);
+  background-size: 30% auto;
+  background-position: center 25vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Noto Sans", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+section {
+  outline: none;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1,
@@ -11,6 +25,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Fjalla One", sans-serif;
   margin: 0;
 }
 
@@ -22,4 +37,10 @@ main {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.black_box {
+  background-color: black;
+  color: white;
+  padding: 30px;
 }

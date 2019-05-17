@@ -3,7 +3,7 @@
   position: relative;
 }
 
-#title .bg_img {
+/* #title .bg_img {
   background-image: url(../images/vector_earth.png);
   background-size: 30% auto;
   background-position: center;
@@ -15,7 +15,7 @@
   height: 100%;
   width: 100%;
   z-index: 1;
-}
+} */
 
 #title h1 {
   color: black;
