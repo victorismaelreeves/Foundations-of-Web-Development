@@ -27,3 +27,11 @@ window.onload = function() {
     showMessage();
   };
 };
+
+function overFunc(el) {
+  el.style.color = "red";
+}
+
+function outFunc(el) {
+  el.style.color = "black";
+}
