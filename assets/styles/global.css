@@ -19,8 +19,11 @@ body {
   margin: 0;
 }
 
-section:not(#title) {
+section {
   outline: none;
+}
+
+section:not(#title) {
   min-height: 100vh;
   padding: 0 30px;
 }
