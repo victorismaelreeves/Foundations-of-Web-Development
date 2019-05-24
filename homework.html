@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>HtmL website</title>
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+      <script>
+      $(document).ready(function() {
+    $(window).scroll(function(e) {
+        var s = $(window).scrollTop(),
+            opacityVal = (s / 200);
+
+        $('.blurred-image').css('opacity', opacityVal);
+    });
+});
+</script>
+      <style>
+
+
+body { margin: 0; padding: 0; }
+
+#blurred-image-container {
+    display:block;
+    padding:0;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+.img-src { 
+    position: absolute;
+    background:url(https://thumbs.dreamstime.com/z/binary-code-black-white-background-two-digits-halftone-illustration-90372374.jpg) center center;
+    background-size: cover;
+    top: -10%;
+    bottom: 10%;
+    left: -10%;
+    right: 10%;
+    width:120%;
+    height:120%;
+}
+
+.img-src.blurred-image {
+    opacity:0;
+    -webkit-filter: blur(50px) brightness(0.7);
+    -ms-filter: blur(50px) brightness(0.7);
+    -o-filter: blur(50px) brightness(0.7);
+    filter: blur(50px) brightness(0.7);
+}
+
+.content {
+    padding:150px 50px;
+    color:#fff;
+    text-align:center;
+}
+
+.avatar {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    margin-bottom:160px;
+    opacity: 1;
+}
+
+        .container { 
+          grid-gap: 10px 10px; 
+        }
+
+        .container {
+          height: 30px;
+          margin: 0.5rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .cell-1 { 
+          grid-row: 1; 
+          grid-column: 1/4; 
+        }
+        .cell-8 { 
+          grid-row: 4; 
+          grid-column: 1/4; 
+        }
+
+        .cell {
+          border-radius: 25px;
+        }
+        .cell {
+          color: white;
+          font-size: 3rem;
+          text-align: center;
+          padding: 2rem;
+        }
+        .cell-1 {
+          background: silver;
+        }
+        .cell-2 {
+          background: rgb(165, 161, 161);
+        }
+        .cell-3 {
+          background: rgb(145, 142, 142);
+        }
+        .cell-4 {
+          background:darkgrey;
+        }
+        .cell-5 {
+          background: rgb(161, 163, 165);
+        }
+        .cell-6 {
+          background: rgb(124, 122, 122);
+        }
+        .cell-7 {
+          background: rgb(148, 150, 151);
+        }
+        .cell-8 {
+          background: rgb(175, 171, 171);
+        }
+
+          #mybutton {
+         color: rgb(255, 255, 255);
+         font-size: 16px; 
+         line-height: 16px; 
+         padding: 6px; 
+         border-radius: 10px; 
+         font-family: "Lucida Console", Monaco, monospace; 
+         font-weight: normal; 
+         text-decoration: none; 
+         font-style: normal; 
+         font-variant: normal; 
+         text-transform: none; 
+         background-image: linear-gradient(to right, rgb(88, 90, 92) 0%, rgb(70, 74, 77) 50%, rgb(106, 110, 112) 100%);
+         box-shadow: rgb(56, 56, 55) 5px 5px 16px 18px; 
+         border: 2px solid rgb(83, 86, 88); 
+         }
+        #myButton:hover {
+        background: rgb(108, 110, 112); }
+        #myButton:active {
+        background: rgb(182, 185, 189); }
+
+
+      .paras{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif, monospace;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        word-spacing: 2px;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        margin: 0px;
+        }
+
+        h2 {
+        font-family: "oswald", monospace;
+        font-size: 50px;
+        letter-spacing: 0.4px;
+        word-spacing: 2px;
+        color: #000000;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+      }
+      h1 {
+        color: rgb(47, 48, 49);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Monaco, monospace;
+        font-size: 50px;
+        letter-spacing: 0.4px;
+        word-spacing: 2px;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+      }
+      </style>
+
+  </head>
+  <body> 
+    
+      <div class="layout-foreground">
+          <div id="blurred-image-container">
+              <div class="img-src"></div>
+              <div class="img-src blurred-image"></div>
+          </div>
+          <div class="content">
+              <img class="avatar" src="https://cdn.pixabay.com/photo/2017/10/16/22/07/code-2858768__340.png"/>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="cell cell-1"> 
+              <h1>Our firs experience with the web</h1>
+          </div>
+
+          <div class="cell cell-2">
+              
+                  <h2 class = "namnes"> Victor</h2>
+
+                  <p class = "paras">
+                  "My first experience using the internet is most likely a relatable one. I was in school, in Paris, and the teacher brought the entire class up to the computer room. I can’t remember if the computers were just installed or if it was just the first time we where allowed to use them but I do recall that one particular student had some previous knowledge, mainly due to the fact that he knew how to bypass the school block and was able to get us straight to the most exciting games website. I remember the walls were orange but I have not the recollection of the computer we where using or what we were supposed to be doing (most likely something less exciting like WolframAlpha or paint). Once we got onto the games website I was blown away by the number of games I could play at my will,  it was like an endless supply of fun to me and I was incredibly excited. It was clear at that moment that I had underestimated the internet.
+        
+                  My mother had a Mac in the house which she mainly used to write, and I’m sure we had an internet connection at that time but I had never tried using it. To me, the computer was just a tool for work and there was nothing cool or desirable about that, I had no interest in them whatsoever. This obviously changed when I found all the games. Shooting aliens or just simple platformers… I was hooked.
+        
+                  So that’s my first real memory of using one and being excited by one. First, the thrill of being able to bypass the school block on forbidden websites then finding out that there where entire websites filled with thousands of games, my mind was blown."
+        
+                  </p> 
+          </div>
+
+          <div class="cell cell-3">
+            
+            <h2 class = "names"> Leah </h2>
+            <p class = "paras">
+              "I'm not sure if this was the first time I interacted with the web but what I do remember was email using AOL. My brother and I were still really young (around 6) and we would draw a lot. My father lived in Switzerland while we were in Germany, so we often would fax our drawings. But that meant that my father always saw them in greyscale. Then we got an email account where we could scan and send our drawings to my father. He finally got to see them in color and we could respond to our "artwork". I remember being amazed by this and we were always very excited to check our email to see any comments (Mum always supervised us, she wasn't very trusting of the web!)"
+
+              </p>
+          </div>
+
+          <div class="cell cell-4">
+             
+                  <h2 class = "names"> Alina </h2>
+
+                  <p class = "paras">
+                  "To be honest I don't remember the first time I used the internet because as I remember it always was there. Though, I remember some funny stories about how I was learning to understand what is it and how it works. So I am going to write about one of them.
+        
+                  As I already mentioned, the Internet was existing since I was born, and when I was 5 years old I remember that my family had one super old computer, which looked like a big plastic box, and a more new version of computer, which was already quite flat. Everyone, of course, was using the new one because it was faster and better, and I, as the smallest person in the family was left to play with an old one.
+                  Apparently, the new computer was connected to the internet and I was observing my parents searching web, so I knew everything about how it looked inside and how to use it. Well, at least I thought that I knew everything. And one day, playing around the old computer I found the icon of Internet Explorer and I was sure that this icon means that I can access the internet. And being very excited about my discovery I decided to search for something. When I clicked on it nothing happened because the computer was not connected to any network but for a moment I thought that I broke something in the computer because I was thinking that you can install the "Internet" on your computer like all the other programs.
+                  I came to my parents with this story and they explained to me that the internet is not just one program."
+                  
+              </p>
+          </div>
+
+          <div class="cell cell-5">
+              
+                  <h2 class = "names"> Kirill</h2>
+                  <p class = "paras">
+                  "I got my first computer in 2005. Operation System was Windows XP but the internet very very low speed. Was called Dial-Up modem which made creepy sounds and if someone calling, the internet immediately shot down) After one year, finally we have wi-fi router.  One friend told me Microsoft introduced a new operation system Windows 7.  I looked in Microsoft website (and yes it was my first web site) and I saw that Microsoft offers to download a new Windows Media Player free. It took me almost 4 hours to get the .exe file. When I installed NEW WMP. That was a very different design from Windows XP and I liked it. At that moment I realized that web it’s powerful “tool”."
+              </p>
+          </div>
+
+          <div class="cell cell-6">
+              <h2 class = "names"> Joshua </h2>
+
+              <p class = "paras">
+                  "I’d loved computers for a long time, ever since I was introduced to them in grade school. Classrooms had old Macs in them where you could do dot-matrix printing and play Oregon Trail. We used them to draw and to learn. I stayed fascinated for years, but it was one day when I was 12 years old that my neighbor friend told me they got the internet. I had heard about the internet, that it connected you to information and that you could find pages about anything you could think of. I called him up and asked if I could come over. When I got there we ran straight upstairs to the office and sat down. He connected and the modem made all its weird sounds and then he opened up Netscape and I watched the first webpage load in slowly. Yahoo. There was the funny logo with the exclamation point. The list of blue links. There were categories for all kinds of things. We spent the next 4 hours clicking from category to category and from page to page, seeing what kinds of wild sites we could find. That evening I started my campaign of annoying my parents to death to get a computer for our home and it had to be one that could connect to the internet."
+        
+              </p>
+          </div>
+
+          <div class="cell cell-7">
+              
+                  <h2 class = "names"> Jana </h2>
+                  <p class = "paras">
+                  "I can remember quite well the first time that I used the web since I was actually waiting for finally "getting installed the internet” on my computer.
+        
+                  It was in 2000 and I had to dial in via a modem (I’m old enough to remember the pre-flat rate time) and I couldn’t wait to create an E-Mail account for being able to send my very first E-Mail to the only other one of my classmates that had Internet already at this time.
+                  
+                  Funnily this new way of communication & connecting people that the Internet provided was the most exciting purpose for me and shortly after we discovered the world of chatrooms and were totally amazed of the possibility to talk to people somewhere in real-time."
+              </p>
+        </div>
+
+        <div class="cell cell-8">
+
+            <a href="http://www.zombo.com" id="mybutton">click ?</a>.
+         </div>
+  </body>
+</html>
