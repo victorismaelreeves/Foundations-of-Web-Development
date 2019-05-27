@@ -7,7 +7,18 @@
 
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+  </script>
+
+ <script>
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>
+
       <script>
       $(document).ready(function() {
     $(window).scroll(function(e) {
@@ -16,14 +27,6 @@
 
         $('.blurred-image').css('opacity', opacityVal);
     });
-});
-</script>
- <script>
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
 });
 </script>
 
